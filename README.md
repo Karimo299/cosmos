@@ -1,34 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cosmos
+
+<div>
+    <p>Cosmos is a curated collection of stunning space photos. They’ve been collected from NASA, and provide a glimpse into the vast beauty of our universe. For those who want to look out into the vastness of space and feel their heart swell with awe, Cosmos is the perfect website. Explore new worlds, and travel to places that we’ve never been before.
+    </p>
+</div>
+
+<br>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-this-project">About This Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+---
+
+## About This Project
+<div>
+<p> This Project is still WIP </p>
+
+<div>
+<div style="padding:1rem">
+<p style="flex: 1"> 
+</p>
+</div>
+</div>
+
+### Built With
+
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/docs/getting-started)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Git](https://git-scm.com/downloads)
+- npm which automatically comes with [Node.js](https://nodejs.org/en/download/)
+- [Nasa's API](https://api.nasa.gov/) to generate your API key.
+
+### Usage
+
+1. Clone the repo
+
+```console
+git clone https://github.com/karimo299/cosmos.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the cosmos directory
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```console
+cd cosmos
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. install all the dependacies by running
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```console
+npm install
+```
 
-## Learn More
+4. Before running the project, youll need to grab an API key from [Nasa's Website](https://api.nasa.gov/) by creating an account. Then You will be able to generate a key which you can paste in the `api.json` file, instead of "Insert API Key".
 
-To learn more about Next.js, take a look at the following resources:
+5. To start the project, simply run
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```console
+npm run dev
+```
