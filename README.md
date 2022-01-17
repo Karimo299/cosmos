@@ -1,30 +1,17 @@
 # Cosmos
 
-<div>
-    <p>Cosmos is a curated collection of stunning space photos. They’ve been collected from NASA, and provide a glimpse into the vast beauty of our universe. For those who want to look out into the vastness of space and feel their heart swell with awe, Cosmos is the perfect website. Explore new worlds, and travel to places that we’ve never been before.
-    </p>
-</div>
+Cosmos is a curated collection of stunning space photos. They’ve been collected from NASA, and provide a glimpse into the vast beauty of our universe. For those who want to look out into the vastness of space and feel their heart swell with awe, Cosmos is the perfect website. Explore new worlds, and travel to places that we’ve never been before.
 
-<br>
+---
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-this-project">About This Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#usage">Usage</a></li>
-      </ul>
-    </li>
-  </ol>
-</details>
+# Table of Contents
+1. [About This Project](#about-this-project)
+    * [Roadmap](#roadmap)
+    * [Built With](#built-with)
+    
+2. [Getting Started](#getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Usage](#usage)
 
 ---
 
@@ -39,10 +26,18 @@
 </div>
 </div>
 
+### Roadmap
+1) Improve the speed of the website
+    * Infinite Scrolling (Load more button temporary)
+    * Better image lazy loading
+
+2) Add liking system
 ### Built With
 
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org/docs/getting-started)
+- [Nasa's Astronomy Picture of the Day(APOD)](https://github.com/nasa/apod-api)
+- [react-responsive-masonry](https://github.com/cedricdelpoux/react-responsive-masonry)
 
 ---
 
