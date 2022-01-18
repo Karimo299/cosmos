@@ -6,6 +6,7 @@
   color: #c5c6c7;
   width: 100%;
   margin-inline: auto;
+  text-align: left;
 }
 
 #img {
@@ -32,6 +33,30 @@
   margin-bottom: 0;
   margin-top: 0;
   padding-top: 0;
-  padding-bottom: 2px;
+}
+
+.top {
+  width: 100%;
   border-bottom: solid 2px #c5c6c7;
+}
+
+.btn {
+  all: unset;
+  cursor: pointer;
+  margin-inline-end: 10px;
+  font-size: 40px;
+  margin-top: 0;
+  color: #c5c6c7;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.liked {
+color: red;
+}
+
+.liked:hover {
+color: #f44;
 }
