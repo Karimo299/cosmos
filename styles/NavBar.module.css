@@ -1,4 +1,4 @@
-#nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,44 +7,44 @@
     height: 8vh;
 }
 
-#nav ul {
+.nav ul {
     display: flex;
     margin-left: 0;
     padding-left: 1rem;
     list-style: none;
 }
 
-#nav ul li a {
+.nav ul li a {
     font-size: 1rem;
     text-decoration: none;
     padding: 0px;
     margin-right: 2rem;
 }
 
-#nav ul li a:hover {
+.nav ul li a:hover {
     border-top:solid  2px #66fcf1;
     transition: all 100ms ease;
 }
 
-.current {
-    color: #66fcf1;
+.active {
+    color: #45a29e;
 }
 
-#userInfo {
+.userInfo {
     display: flex;
     height: inherit;
     align-items: center;
     padding-right: 1.25rem;
 }
 
-#userInfo p {
+.userInfo p {
     display: flex;
     font-size: larger;
     margin-right: 0.75rem;
     align-items: center;
 }
 
-#pfp {
+.pfp {
     display: flex;
     vertical-align: center;
     height: 90%;
