@@ -23,7 +23,7 @@ export default function ImageList({ pictures, getData, hasMore }) {
           loader={<h4 className={styles.loading}>Loading...</h4>}
           endMessage={
             <div style={{ textAlign: "center", paddingTop: 20 }}>
-              <h4 className={styles.loading}>Thats All!</h4>
+              <h4 className={styles.loading}>You have reached the end of the Cosmos!</h4>
             </div>
           }
         >
@@ -32,7 +32,7 @@ export default function ImageList({ pictures, getData, hasMore }) {
               
               {/* Loops through all the picutures and displays them if they are of the Image type */}
               {pictures
-                .filter((picture) => picture.media_type === "image").reverse()
+                .filter((picture) => picture.media_type === "image")
                 .map((picture, indx) => (
                   <Card data={picture} key={indx} />
                 ))}
