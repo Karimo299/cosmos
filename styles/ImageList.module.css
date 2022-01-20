@@ -1,5 +1,13 @@
+.container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-inline: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
 .loading {
   color: aliceblue;
-  font-size: larger;
+  font-size: 40px;
   margin: 0 auto;
 }

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import NavStyles from "../styles/NavBar.module.css";
 
+// NavBar Component
 export default function NavBar() {
-  const router = useRouter();
   return (
     <nav className={NavStyles.nav}>
       <ul>
@@ -15,13 +15,14 @@ export default function NavBar() {
           <NavLink href="/likes" exact={true} className="links">Likes</NavLink>
         </li>
       </ul>
-      <div className={NavStyles.userInfo}>
+      <div className={NavStyles.cosmos}>
         <p>Cosmos</p>
       </div>
     </nav>
   );
 }
 
+// NavLink Component to automatically set the current link as active
 function NavLink({ href, exact, children, ...props }) {
   const { pathname } = useRouter();
   const isActive = exact ? pathname === href : pathname.startsWith(href);

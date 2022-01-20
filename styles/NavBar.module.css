@@ -30,31 +30,22 @@
     color: #45a29e;
 }
 
-.userInfo {
+.cosmos {
     display: flex;
     height: inherit;
     align-items: center;
     padding-right: 1.25rem;
 }
 
-.userInfo p {
+.cosmos p {
     display: flex;
     font-size: larger;
     margin-right: 0.75rem;
     align-items: center;
 }
 
-.pfp {
-    display: flex;
-    vertical-align: center;
-    height: 90%;
-    width: auto;
-    border-radius: 0.5rem;
-}
-
-
 /* 
-Colors
+Colors:
 
 #0b0c10
 #1f2833

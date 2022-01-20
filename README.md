@@ -39,6 +39,7 @@ Cosmos is a curated collection of stunning space photos. They’ve been collecte
 - [Nasa's Astronomy Picture of the Day(APOD)](https://github.com/nasa/apod-api)
 - [react-responsive-masonry](https://github.com/cedricdelpoux/react-responsive-masonry)
 - [Firebase](https://firebase.google.com/)
+- [Axios](https://axios-http.com/)
 
 ---
 
@@ -49,6 +50,7 @@ Cosmos is a curated collection of stunning space photos. They’ve been collecte
 - [Git](https://git-scm.com/downloads)
 - npm which automatically comes with [Node.js](https://nodejs.org/en/download/)
 - [Nasa's API](https://api.nasa.gov/) to generate your API key.
+- [Firebase](https://firebase.google.com/)
 
 ### Usage
 
@@ -70,7 +72,25 @@ cd cosmos
 npm install
 ```
 
-4. Before running the project, youll need to grab an API key from [Nasa's Website](https://api.nasa.gov/) by creating an account. Then You will be able to generate a key which you can paste in the `api.json` file, instead of "Insert API Key".
+4. Before running the project, youll need to grab an API key from [Nasa's Website](https://api.nasa.gov/) by creating an account. Then You will be able to generate a key which you can paste in the `api.js` file, instead of "Insert API Key".
+
+5. After grabbing the Nasa API, head to the [Firebase](https://firebase.google.com/) website, Login and click "Get started", the add a new project. Then Click on the web icon to create a new web application. There you can give the app any name you would like, I would recommend cosmos to match the project name and click register. Then grab the contents of the firebaseConfig which should look like this
+``` 
+firebaseConfig = {
+  apiKey: "API_KEY",
+  authDomain: "PROJECT_ID.firebaseapp.com",
+  databaseURL: "https://PROJECT_ID.firebaseio.com",
+  projectId: "PROJECT_ID",
+  storageBucket: "PROJECT_ID.appspot.com",
+  messagingSenderId: "SENDER_ID",
+  appId: "APP_ID",
+  measurementId: "G-MEASUREMENT_ID",
+}
+```
+
+replace the data from the `api.js` file.
+
+Navigate to the Realtime Database section and create a new database, in test mode.
 
 5. To start the project, simply run
 

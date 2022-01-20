@@ -1,4 +1,3 @@
-import { Main } from "next/document";
 import NavBar from "../components/NavBar";
 import LayoutStyles from "../styles/Layout.module.css";
 

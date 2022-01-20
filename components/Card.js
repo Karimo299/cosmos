@@ -1,24 +1,39 @@
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import CardStyles from "../styles/Card.module.css";
-import { fetchData, setData } from "./databaseUtils";
+import { LikedContext } from "../components/LikedContext";
 
 export default function Card({ data }) {
   const [liked, setLiked] = useState(false);
-  const [likedPics, setLikedPics] = useState([]);
+  const [likedList, setLikedList, setData] = useContext(LikedContext);
 
-  useEffect(() => {
-    fetchData(setLikedPics);
-  }, []);
+  function handleLike(liked, data) {
+    // A copy of the likedList
+    let tempLikedList = likedList;
 
-  function updateLike() {
-    if (likedPics.some((e) => e.url === data.url) && !liked) {
-      setLiked(true);
+    // If the current post is in the likedList
+    const postInList = tempLikedList.some((e) => e.url === data.url);
+
+    // Adds or removes post from the list
+    if (liked && !postInList) {
+      tempLikedList.push(data);
+    } else if (!liked && postInList) {
+      tempLikedList = tempLikedList.filter((obj) => obj.url !== data.url);
     }
+
+    // Set the liked list to the new list
+    setLikedList(tempLikedList);
+
+    // sends the new list to the db
+    setData(tempLikedList);
+  }
+
+  // Automatically sets the liked button to red if the post is in the list
+  if (likedList.some((e) => e.url === data.url) && !liked) {
+    setLiked(true);
   }
 
   return (
     <div className={CardStyles.card}>
-      {likedPics !== null && updateLike()}
       <img id={CardStyles.img} src={data.url} alt={data.title} loading="lazy" />
       <div className={CardStyles.text}>
         <div className={CardStyles.top}>
@@ -28,7 +43,7 @@ export default function Card({ data }) {
             className={`${CardStyles.btn} 
             ${liked ? CardStyles.liked : ""}`}
             onClick={() => {
-              setData(!liked, data);
+              handleLike(!liked, data);
               setLiked(!liked);
             }}
           >
