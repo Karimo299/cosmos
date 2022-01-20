@@ -31,7 +31,7 @@ Cosmos is a curated collection of stunning space photos. They’ve been collecte
     * ~~Infinite Scrolling (Load more button temporary)~~
     * ~~Better image lazy loading~~
 
-2) ~~~Add liking system~~~
+2) ~~Add liking system~~
 ### Built With
 
 - [React.js](https://reactjs.org/)
