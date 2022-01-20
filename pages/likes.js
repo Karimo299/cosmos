@@ -3,8 +3,8 @@ import { LikedContext } from "../components/LikedContext";
 
 import ImageList from "../components/ImageList";
 
-export default function likes() {
+export default function Likes() {
   const [likedList] = useContext(LikedContext);
 
-  return <ImageList pictures={likedList} getData={null} hasMore={false} />;
+  return <ImageList pictures={likedList.reverse()} getData={null} hasMore={false} />;
 }

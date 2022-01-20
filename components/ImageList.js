@@ -32,7 +32,7 @@ export default function ImageList({ pictures, getData, hasMore }) {
               
               {/* Loops through all the picutures and displays them if they are of the Image type */}
               {pictures
-                .filter((picture) => picture.media_type === "image")
+                .filter((picture) => picture.media_type === "image").reverse()
                 .map((picture, indx) => (
                   <Card data={picture} key={indx} />
                 ))}

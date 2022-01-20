@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
     onValue(dbref, (snapshot) => {
       const output = snapshot.val();
       if (output === null) output = [];
-      setLikedList(output.reverse());
+      setLikedList(output);
     });
   }
 
